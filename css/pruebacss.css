@@ -1,0 +1,296 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.navegador {
+  width: 100%;
+  height: 500px; }
+  .navegador .navegador--xs {
+    width: 390px; }
+  .navegador .navegador--md {
+    width: 760px; }
+  .navegador .navegador--xL {
+    width: 100%; }
+  .navegador .navegador__lista {
+    display: flex;
+    list-style-type: none; }
+  .navegador__lista--white {
+    background-color: #F0F0EE; }
+  .navegador__lista--blue {
+    background-color: #323C60; }
+  .navegador .navegador__item {
+    height: 100%; }
+  .navegador__link {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; }
+
+.header {
+  background-color: #323C60;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header .header__titulo {
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 20px; }
+
+.nav {
+  background-color: #F0F0EE;
+  font-style: normal;
+  height: 80px;
+  position: sticky;
+  top: 0px; }
+
+.nav__menu {
+  /*li*/
+  display: inline-block;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav__links {
+  /*enlaces*/
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase; }
+
+.nav__ul {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.section__uno {
+  margin: 10px 20px 10px 20px;
+  margin: 0 10px 0 10px;
+  background-color: white;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 0px;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-iteration-count: 1; }
+
+.subtitulos {
+  color: whitesmoke;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #323C60;
+  content: text;
+  border: 1px solid #323C60;
+  margin-top: 30px;
+  padding: 10px 10px 10px 10px; }
+
+.section__dos {
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 20px;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1; }
+
+.section__tres {
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr;
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 20px;
+  animation-name: aparecer;
+  animation-duration: 4s;
+  animation-iteration-count: 1; }
+
+.section__Foto {
+  background-color: white; }
+
+.section__Foto:hover {
+  animation-name: efectoFoto;
+  animation-duration: 3s;
+  animation-iteration-count: 1; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes section__Foto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.logo__whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+
+.logo__whatsapp:hover {
+  transform: scale(1.5, 1.5);
+  transition: all 1s; }
+
+.footer {
+  background-color: #323C60;
+  background-size: contain;
+  font-style: normal;
+  height: 150px;
+  background-image: linear-gradient(to bottom, #323c60, #323c90); }
+
+.footer__menu {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 10px; }
+
+.boton {
+  background-color: #F0F0EE;
+  color: #323C60;
+  border: none;
+  border-radius: 10px;
+  margin: 3px 3px 3px 3px;
+  padding: 5px 5px 5px 5px;
+  font-size: 10px; }
+
+.boton:hover {
+  transform: scale(1.1, 1.1);
+  background-color: whitesmoke; }
+
+.color__Productos {
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  background-color: #F0F0EE;
+  padding: 10px 10px 10px 10px; }
+
+.recetas__logo {
+  display: flex;
+  justify-content: center; }
+
+.recetas__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.recetas__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  margin-left: 30px; }
+
+.recetas__imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.recetas__video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px 10px 30px 10px; }
+
+h3 {
+  color: black;
+  font-family: sans-serif;
+  margin: 10px 10px 10px 10px;
+  background-color: #F0F0EE;
+  padding: 10px 10px 10px 10px; }
+
+h4 {
+  color: black;
+  font-family: sans-serif;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 10px 10px 10px; }
+
+h5 {
+  color: white;
+  font-family: sans-serif; }
+
+fieldset {
+  content: text;
+  padding: 10px 10px 10px 10px;
+  color: black; }
+
+legend {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px 10px 10px 10px; }
+
+p {
+  color: black;
+  font-family: sans-serif;
+  padding: 20px 10px 20px 10px;
+  margin: 10px 10px 10px 10px; }
+
+#estiloContacto {
+  margin: 10px 10px 10px 10px; }
+
+.botonproductos {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase; }
+
+#contenidoTabla {
+  padding: 10px 10px 10px; }
+
+.recetas {
+  padding: 10px 0px 10px 200px; }
+
+form {
+  margin: 30px 30px 30px 30px; }
+
+div {
+  margin: 10px 10px 10px 20px; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
